@@ -1,0 +1,34 @@
+.hero-name-container {
+  @apply relative text-center font-semibold py-4;
+
+  .hero-name-item {
+    @apply w-full;
+  }
+
+  .hero-profile {
+    @apply absolute w-[7rem] h-[7rem] border-[13px] rounded-full border-zinc-900 inset-1 bg-center bg-cover transition-all duration-200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &:hover {
+      @apply w-[8rem] h-[8rem];
+    }
+
+    @screen md {
+      @apply w-[10rem] h-[10rem];
+
+      &:hover {
+        @apply w-[11rem] h-[11rem];
+      }
+    }
+
+    @screen lg {
+      @apply w-[13rem] h-[13rem];
+
+      &:hover {
+        @apply w-[14rem] h-[14rem];
+      }
+    }
+  }
+}

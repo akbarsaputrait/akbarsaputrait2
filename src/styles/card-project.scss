@@ -1,0 +1,9 @@
+.description {
+  p {
+    @apply mt-4 text-sm text-zinc-500;
+
+    a {
+      @apply text-zinc-500 hover:text-zinc-600;
+    }
+  }
+}

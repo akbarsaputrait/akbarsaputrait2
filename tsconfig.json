@@ -20,6 +20,9 @@
       }
     ],
     "paths": {
+      "@styles/*": ["./src/styles/*"],
+      "@components/*": ["./src/components/*"],
+      "@helpers/*": ["./src/library/helpers/*"],
       "@/*": ["./src/*"]
     }
   },
