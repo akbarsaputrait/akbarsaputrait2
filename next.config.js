@@ -9,7 +9,6 @@ const nextConfig = {
     includePaths: [path.join(__dirname, "src/styles")],
   },
   images: {
-    unoptimized: true,
     domains: ["a-us.storyblok.com"],
     remotePatterns: [
       {
@@ -18,7 +17,6 @@ const nextConfig = {
       },
     ],
   },
-  output: "export",
 };
 
 module.exports = nextConfig;
