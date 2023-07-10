@@ -2,6 +2,9 @@ const path = require("path");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  env: {
+    STORYBLOK_TOKEN: process.env.STORYBLOK_TOKEN,
+  },
   sassOptions: {
     includePaths: [path.join(__dirname, "src/styles")],
   },
