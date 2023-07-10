@@ -11,7 +11,11 @@ interface IBlogCoverProps {
 
 const CoverBlog: React.FC<IBlogCoverProps> = ({ cover, title, date, slug }) => {
   return (
-    <Link href={`/blog/${slug}`} className="block overflow-hidden">
+    <Link
+      href="/blog/[slug]"
+      as={`/blog/${slug}`}
+      className="block overflow-hidden"
+    >
       <Image
         src={cover}
         alt="Blog Cover"
